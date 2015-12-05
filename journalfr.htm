@@ -1,0 +1,612 @@
+<!DOCTYPE html><html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type"
+        content="text/html; charset=us-ascii" />
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="" />
+  <meta name="author"
+        content="" />
+  <link rel="shortcut icon"
+        href="img/robot.ico" />
+
+  <title>Robotique Marianopolis: Le Journal</title><!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css"
+        rel="stylesheet"
+        type="text/css" />
+  <link href="js/jquery.booklet.1.1.0.css"
+        type="text/css"
+        rel="stylesheet"
+        media="screen" />
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet"
+        href="css/styles.css"
+        media="screen"
+        type="text/css" /><!-- GOOGLE FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Neucha|Kite+One|Architects+Daughter'
+        rel='stylesheet'
+        type='text/css' />
+</head>
+
+<body>
+  <div class="env_box">
+    <img src="img/envFR.png"
+         id="env"
+         alt=""
+         usemap="#Env" /> <map name="Env"
+         id="Env">
+      <area shape="rect"
+            coords="526,60,613,159"
+            href="https://www.facebook.com/crcteam006"
+            alt="Facebook" />
+      <area shape="rect"
+            coords="618,61,712,160"
+            href="https://twitter.com/MariRobotics"
+            alt="Twitter" />
+          <area shape="rect" coords="430,63,525,161" href="http://www.youtube.com/channel/UCvQLs4To1FbGwwaL3YcAi8w" alt="YouTube"/>
+
+    </map>
+  </div>
+
+  <div class="music_controller">
+    <p>Musique on/off</p>
+  </div>
+
+  <div class="container">
+    <div class="map_box">
+      <img src="img/mapFR.jpg"
+           usemap="#Map"
+           id="map" /> <map name="Map"
+           id="Map">
+        <area shape="rect"
+              coords="407,298,494,372"
+              href="teamfr.htm"
+              alt="L'&#233;quipe" />
+        <area shape="rect"
+              coords="200,139,279,211"
+              href="journalfr.htm"
+              alt="Le Journal" />
+        <area shape="rect"
+              coords="584,386,677,475"
+              href="indexfr.htm"
+              alt="Acceuil" />
+        <area shape="rect"
+              coords="10,39,86,140"
+              href="videofr.html"
+              alt="Le Vid&#233;o" />
+        <area shape="rect"
+              coords="370,177,468,283"
+              href="gamefr.html"
+              alt="Le Jeu" />
+        <area shape="rect"
+              coords="335,35,417,137"
+              href="collegefr.html"
+              alt="Marianopolis College" />
+        <area shape="rect"
+              coords="422,401,509,498"
+              href="robotfr.html"
+              alt="Larry Le Robot" />
+        <area shape="rect"
+              coords="586,7,685,49"
+              href="indexen.htm"
+              alt="Anglais" />
+      </map>
+    </div>
+
+    <div class="book_wrapper">
+      <a id="next_page_button"></a> <a id="prev_page_button"></a>
+
+      <div id="loading"
+           class="loading">
+        Chargement...
+      </div>
+
+      <div id="mybook"
+           style="display:none;">
+        <div class="b-load">
+          <div>
+            <img src="img/journal/aug20.jpg"
+                 style="width:250px;height=auto;"
+                 alt="August 20th, 2013" />
+
+            <h1>Le 20 ao&#251;t 2013</h1>
+
+            <p>Alors me voici. Une nouvelle ville, un nouvel emploi et un nouvel
+            &#233;tablissement scolaire: une toute nouvelle vie, quoi! Exactement ce dont
+            j&#8217;ai besoin pour tourner la page sur mon pass&#233;
+            t&#233;m&#233;raire.</p>
+
+            <p>12:45 &#8211; P&#233;riode d&#8217;activit&#233;</p>
+
+            <p>&#8230;J&#8217;avais bien raison de penser qu&#8217;enseigner &#224;
+            Marianopolis serait une exp&#233;rience enrichissante. Mon d&#233;sir de
+            passer &#224; autre chose, par contre, est tomb&#233; &#224; l&#8217;eau.</p>
+          </div>
+
+          <div>
+            <p>Deux &#233;tudiantes se sont renseign&#233;es sur les raisons pour
+            lesquelles j&#8217;ai mis un terme &#224; mes exp&#233;ditions
+            arch&#233;ologiques. Je leur ai alors racont&#233; comment j&#8217;avais
+            &#233;chou&#233; dans ma qu&#234;te de la relique sacr&#233;e de
+            l&#8217;ancien temple amazonien. Elles ont alors offerte de m&#8217;aider
+            avec l&#8217;&#233;quipe de robotique de Marianopolis. Elles pensent que le
+            robot que construira l&#8217;&#233;quipe pour la comp&#233;tition de cette
+            ann&#233;e serait en mesure de franchir la porte du temple : il serait
+            capable de d&#233;bloquer l&#8217;entr&#233;e en empilant des pierres sur la
+            dalle &#224; pression, sans toutefois activer le m&#233;canisme de
+            s&#233;curit&#233; du lieu.<br />
+            <br />
+            L&#8217;aventurier en moi n&#8217;a clairement pas disparu : je compte
+            repartir pour la for&#234;t amazonienne avec mes assistants d&#232;s
+            f&#233;vrier, tout juste apr&#232;s la comp&#233;tition. D&#8217;ici l&#224;,
+            l&#8217;&#233;quipe de robotique travaillera d&#8217;arrache-pied pour
+            cr&#233;er un robot qui r&#233;cup&#233;rera la Coupe d&#8217;or du
+            temple.</p>
+          </div>
+
+          <div>
+            <h1>Le 10 octobre 2013</h1>
+
+            <p>La s&#233;lection des membres de l&#8217;&#233;quipe est venue &#224;
+            terme. Je suis enthousiaste &#224; l&#8217;id&#233;e de travailler avec ces
+            &#233;tudiants ainsi que mes coll&#232;gues, les professeurs Simon Sabik et
+            Dominique Paradis. Ces physiciens sont l&#224; pour soutenir les id&#233;es
+            des &#233;l&#232;ves ou bien pour les r&#233;futer si elles vont &#224;
+            l&#8217;encontre des principes de la physique.</p>
+          </div>
+
+          <div>
+            <img src="img/journal/oct22.jpg"
+                 alt="Le 22 octobre 2013" />
+
+            <h1>Le 22 octobre 2013</h1>
+
+            <p>Pour ramasser des fonds pour notre exp&#233;dition, les membres de
+            l&#8217;&#233;quipe ont tenu une vente de sucreries et d&#8217;aliments
+            sal&#233;s au C&#201;GEP Marianopolis.</p>
+          </div>
+
+          <div>
+            <h1>Le 4 novembre 2013</h1>
+
+            <p>Les &#233;tudiants m&#8217;ont fait part du lancement de la
+            comp&#233;tition auquel ils ont assist&#233;, tenu au C&#201;GEP Vanier. Ils
+            en sont revenus avec une meilleure id&#233;e des particularit&#233;s du
+            d&#233;fi de cette ann&#233;e ainsi que les d&#233;tails du siteweb
+            qu&#8217;ils auront &#224; construire.</p>
+          </div>
+
+          <div>
+            <h1>Le 5 novembre 2013</h1>
+
+            <p>Durant la p&#233;riode d&#8217;activit&#233;s &#224; Marianopolis, de
+            12h45 &#224; 14h15, j&#8217;ai convoqu&#233; les membres de
+            l&#8217;&#233;quipe &#224; une rencontre afin de discuter de diff&#233;rents
+            designs pour le robot. D&#8217;apr&#232;s ce que j&#8217;ai saisi,
+            l&#8217;id&#233;e d&#8217;un robot pouvant servir de rampe a &#233;t&#233;
+            propos&#233;e. Sans &#234;tre rejet&#233;e, la suggestion n&#8217;a pas
+            re&#231;u autant d&#8217;appui que celle d&#8217;un chariot
+            &#233;l&#233;vateur.<br />
+            Quelques &#233;tudiants, Daniel, Claudia, Fozail et Amanda se sont
+            propos&#233;s pour filmer les &#233;tapes de notre progr&#232;s. Nous
+            pourrons ainsi retracer nos pas plus ais&#233;ment si cela s&#8217;av&#232;re
+            n&#233;cessaire.</p>
+                                        <img src="img/journal/p6.jpg"
+                 alt="Le 5 Novembere 2013" style="width:150px;" />
+          </div>
+
+          <div>
+            <img src="img/journal/nov14.jpg"
+                 alt="Le 14 novembre 2013" />
+
+            <h1>Le 14 novembre 2013</h1>
+
+            <p>Les coll&#233;giens se sont de nouveau r&#233;unis durant la p&#233;riode
+            d&#8217;activit&#233;. &#192; partir de mes descriptions du temple et de ses
+            alentours, Jenny m&#8217;a soumis une repr&#233;sentation virtuelle du
+            sanctuaire en 3D qu&#8217;elle a fait sur l&#8217;ordinateur. Nous nous y
+            r&#233;f&#232;rerons lorsque nous planifierons notre qu&#234;te.</p>
+          </div>
+
+          <div>
+            <p>Pour ce qui est de la conception du robot, les &#233;tudiants ont
+            r&#233;alis&#233; qu&#8217;une rotation de 360o autour du syst&#232;me
+            d&#8217;&#233;l&#233;vation conf&#233;rerait plus de pr&#233;cision aux
+            man&#339;uvres du robot. Pour ce faire, ils fabriqueront un plateau
+            tournant.</p>
+          </div>
+
+          <div>
+            <h1>Le 19 novembre 2013</h1>
+
+            <p>Mes assistants se sont mis aujourd&#8217;hui au travail manuel. Ils se
+            sont s&#233;par&#233;s en groupe afin de concevoir des prototypes pour la
+            base et le syst&#232;me d&#8217;&#233;l&#233;vation. La robotique
+            n&#8217;&#233;tant pas mon point fort, disons que la supervision de
+            Professeur Sabik a &#233;t&#233; plus significative que la mienne!</p>
+          </div>
+
+          <div>
+            <img src="img/journal/nov23.jpg"
+                 alt="Le 23 novembre 2013" />
+
+            <h1>Le 23 novembre 2013</h1>
+
+            <p>Professeurs et assistants ont finalement pu d&#233;dier un samedi entier
+            au d&#233;veloppement du robot. Aujourd&#8217;hui, les prototypes ont
+            &#233;t&#233; raffin&#233;s et renforc&#233;s.</p>
+          </div>
+
+          <div>
+            <p>Nous avons s&#233;par&#233; l&#8217;&#233;quipe en petits groupes : le
+            travail peut ainsi &#234;tre accompli avec efficacit&#233;. Certains
+            &#233;tudiants ont travaill&#233; sur les moteurs, essayant d&#8217;augmenter
+            leur vitesse sans trop diminuer leur force m&#233;canique. D&#8217;autres ont
+            discut&#233; du fonctionnement du syst&#232;me d&#8217;&#233;l&#233;vation
+            combin&#233; &#224; un plateau tournant. D&#8217;autres encore se sont de
+            nouveau pench&#233;s sur l&#8217;id&#233;e d&#8217;un robot pouvant servir de
+            rampe: ils n&#8217;ont pas pu se mettre d&#8217;accord sur un mod&#232;le
+            concret, alors ils ont laiss&#233; tomber l&#8217;id&#233;e.<br />
+            Mes assistants ont aussi dress&#233; une liste de l&#8217;&#233;quipement
+            dont nous avons besoin, afin que Capitaine Smita puisse placer une commande
+            en ligne. Esp&#233;rons que les mat&#233;riaux arriveront &#224; temps pour
+            notre prochaine rencontre.</p>
+          </div>
+
+          <div>
+            <img src="img/journal/proto19dec.jpg"
+                 alt="" />
+
+            <h1>Le 19 d&#233;cembre 2013</h1>
+
+            <p>Les mat&#233;riaux sont bel et bien arriv&#233;s. Les coll&#233;giens ont
+            vite profit&#233; du nouveau mat&#233;riel pour se mettre s&#233;rieusement
+            au travail. Deux c&#244;t&#233;s de la base ont &#233;t&#233;
+            compl&#233;t&#233;s et la construction du syst&#232;me
+            d&#8217;&#233;l&#233;vation va de bon train.<br />
+            Aujourd&#8217;hui, j&#8217;ai pr&#233;sent&#233; &#224; mes assistants une
+            merveille arch&#233;ologique. Lors de ma visite au temple, j&#8217;avais vu,
+            grav&#233;s sur les murs du sanctuaire, des sc&#232;nes illustrant les
+            Anciens en train de construire le temple.</p>
+          </div>
+
+          <div>
+          <p>J&#8217;avais pris des photos de ces gravures et je les ai maintenant
+          ressorties pour les montrer aux membres de l&#8217;&#233;quipe.</p><img src=
+          "img/journal/kiosk9dec.jpg"
+               alt="19 d&#233;cembre 2013" /></div>
+
+          <div>
+            <h1>Le 20 d&#233;cembre 2013</h1>
+
+            <p>Vu que les examens sont termin&#233;s, les &#233;tudiants peuvent
+            maintenant se concentrer uniquement sur le projet et les choses avancent
+            plut&#244;t rapidement. La base est plus ou moins compl&#233;t&#233;e. Le
+            syst&#232;me d&#8217;&#233;l&#233;vation, quant &#224; lui, est trop
+            serr&#233;. La pi&#232;ce mobile a donc de la difficult&#233; &#224; monter
+            et &#224; descendre &#224; cause de la friction excessive. Cela me
+            pr&#233;occupe un peu, parce que ceux qui travaillent sur cette partie
+            n&#8217;ont pas encore trouv&#233; de solutions.</p>
+          </div>
+
+          <div>
+            <img src="img/journal/dec21.jpg"
+                 style="width:250px;height=auto;"
+                 alt="Le 21 d&#233;cembre 2013" />
+
+            <h1>Le 21 d&#233;cembre 2013</h1>
+
+            <p>&#192; date, sans aucun poids &#224; supporter, la base roule tr&#232;s
+            vite. La vitesse est essentielle pour la comp&#233;tition. Je sais aussi, par
+            exp&#233;rience, qu&#8217;une telle agilit&#233; aidera le robot &#224;
+            contourner les pi&#232;ges et &#224; esquiver les fl&#233;chettes du
+            temple.<br />
+            Ceux qui travaillent sur le syst&#232;me d&#8217;&#233;l&#233;vation font de
+            leur mieux pour le modifier. Ils pr&#233;voient essayer un nouveau design de
+            rails apr&#232;s la saison des f&#234;tes.</p>
+          </div>
+
+          <div>
+            <img src="img/journal/jan6.jpg"
+                 alt="Le 6 janvier 2014" />
+
+            <h1>January 6th, 2014</h1>
+
+            <p>Les vacances sont maintenant pass&#233;es et nous nous sommes remis au
+            travail, m&#234;me si les cours n&#8217;ont toujours pas repris. Mes
+            assistants se privent d&#8217;un cong&#233; reposant pour venir travailler
+            inlassablement ici chaque jour. Leur d&#233;vouement m&#233;rite mon
+            admiration.</p>
+          </div>
+
+          <div>
+            <p>Pour le syst&#232;me d&#8217;&#233;l&#233;vation, Steven a propos&#233; un
+            syst&#232;me compos&#233; d&#8217;une poulie ainsi que de roues appos&#233;es
+            aux c&#244;t&#233;s de la poutre de support. Ce syst&#232;me de roues a donc
+            &#233;t&#233; construit par un groupe d&#8217;&#233;l&#232;ves alors
+            qu&#8217;une autre &#233;quipe a travaill&#233; sur le plateau tournant. De
+            plus, de petites roues ont &#233;t&#233; ajout&#233;es entre les deux plaques
+            de la structure tournante pour les emp&#234;cher d&#8217;osciller.</p>
+          </div>
+
+          <div>
+            <h1>Le 7 janvier 2014</h1>
+
+            <p>Mon coll&#232;gue, le professeur Sabik, et moi avons supervis&#233;
+            l&#8217;ach&#232;vement du transporteur &#224; roues du syst&#232;me de
+            levage. Quant au plateau tournant, les &#233;tudiants l&#8217;avaient
+            initialement plac&#233; au centre de la base, mais ils ont vite
+            r&#233;alis&#233; que cet emplacement emp&#234;chait le syst&#232;me
+            d&#8217;&#233;l&#233;vation d&#8217;op&#233;rer proprement. Pour que ce
+            dernier ait plus d&#8217;espace, ils ont d&#251; d&#233;placer le plateau
+            tournant vers l&#8217;avant.</p>
+          </div>
+
+          <div>
+            <p>Mes assistants ont aussi travaill&#233; sur la pince. Pour son prototype,
+            ils avaient exp&#233;riment&#233; avec des &#233;lastiques, mais pour le
+            robot, ils ont utilis&#233; des tubes chirurgicaux. Ceux-ci cr&#233;ent une
+            tension dans la pince, lui permettant de saisir des objets.</p>
+          </div>
+
+          <div>
+            <h1>Le 8 janvier 2014</h1>
+
+            <p>Eh bien, je dois dire qu&#8217;un changement significatif a &#233;t&#233;
+            apport&#233; au design du robot. Mes assistants ont enti&#232;rement mis de
+            c&#244;t&#233; le plateau tournant. Ils l&#8217;ont trouv&#233; instable,
+            encombrant, inutile et trop consommateur en &#233;nergie. Par ailleurs, les
+            &#233;tudiants croient, apr&#232;s avoir test&#233; le robot, que celui-ci
+            est assez agile. Le degr&#233; de rotation qu&#8217;apporte le plateau
+            tournant n&#8217;est donc pas essentiel.</p>
+          </div>
+
+          <div>
+            <p>Les &#233;l&#232;ves ont aussi r&#233;solu le probl&#232;me du
+            syst&#232;me de levage au ch&#226;ssis. Le dispositif glisse plus ou moins
+            bien sur les rails, mais lorsqu&#8217;ils y ont attach&#233; un seau rempli
+            de ciment, la ligne de p&#234;che de la poulie s&#8217;est bris&#233;e
+            d&#8217;un coup sec. D&#233;cid&#233;ment, il nous faudrait une meilleure
+            corde pour ce syst&#232;me.</p>
+          </div>
+
+          <div><img src="img/journal/jan8.jpg"
+               alt="" /></div>
+
+          <div>
+            <img style="width:250px;height=auto;"
+                 src="img/journal/jan9.jpg"
+                 alt="" />
+
+            <h1>Le 9 janvier 2014</h1>
+
+            <p>Les &#233;tudiants ont ajout&#233; au robot un kit de mouvement de
+            translation secondaire, dans l&#8217;espoir que cela permette au robot de
+            soulever des charges jusqu&#8217;&#224; une hauteur plus &#233;lev&#233;e.
+            Cependant, cet ajout n&#8217;a fait qu&#8217;aggraver
+            l&#8217;instabilit&#233; de la pince. Ils l&#8217;ont donc d&#233;mont&#233;
+            et ont opt&#233; d'allonger les rails initiaux du syst&#232;me. J&#8217;ai
+            souvent encourag&#233; mes assistants durant les moments difficiles, mais
+            j&#8217;ai remarqu&#233; que c&#8217;est la pr&#233;sence de Professeur
+            Paradis qui les motive &#224; s&#8217;activer.</p>
+          </div>
+
+          <div>
+            <h1>Le 10 janvier 2014</h1>
+
+            <p>J&#8217;&#233;tais horriblement inquiet lorsque je suis entr&#233; dans
+            l&#8217;atelier de robotique et que j&#8217;ai vu le robot enti&#232;rement
+            d&#233;mantel&#233;! Mes assistants m&#8217;ont vite rassur&#233;
+            qu&#8217;ils avaient simplement d&#233;mont&#233; le robot afin de pouvoir
+            l&#8217;&#233;largir. Le ch&#226;ssis avait besoin d&#8217;&#234;tre agrandi
+            sinon le robot se renverserait en montant la rampe qui est plut&#244;t raide.
+            Les &#233;tudiants ont aussi translat&#233; le m&#233;canisme
+            d&#8217;&#233;l&#233;vation vers le milieu de la base afin que le robot soit
+            plus stable.</p>
+          </div>
+
+          <div>
+            <p>Initialement, cette op&#233;ration &#233;tait impossible &#224; cause du
+            plateau tournant. Or, puisque ce dernier a &#233;t&#233; mis de
+            c&#244;t&#233;, centrer le syst&#232;me d&#8217;&#233;l&#233;vation ne pose
+            plus probl&#232;me.<br />
+            Vers la fin de la journ&#233;e, lorsque les coll&#233;giens ont reconstruit
+            le robot pi&#232;ce par pi&#232;ce, ils ont fait en sorte que la tour
+            d&#8217;&#233;l&#233;vation puisse &#234;tre ais&#233;ment d&#233;mont&#233;e
+            du ch&#226;ssis. Ce design modulaire pourrait &#234;tre utile si jamais le
+            robot a besoin d&#8217;&#234;tre r&#233;par&#233;.</p>
+          </div>
+
+          <div>
+            <img src="img/journal/jan11.jpg"
+                 alt="" />
+
+            <h1>Le 11 janvier 2014</h1>
+
+            <p>Alors que certains continuaient &#224; rehausser le robot, mes assistants,
+            Yu Si et Erik, ont commenc&#233; &#224; y faire passer des fils. Ils
+            pr&#233;voient glisser le panneau du circuit &#233;lectrique sous le
+            ch&#226;ssis.</p>
+          </div>
+
+          <div>
+            <h1>Le 13 janvier 2014</h1>
+
+            <p>L&#8217;&#233;quipe a reproduit la rampe du terrain de jeu, mais
+            malgr&#233; nos doigts crois&#233;s le robot a &#233;t&#233; incapable de la
+            monter. Tra&#238;nant des pieds, mes assistants sont retourn&#233;s &#224;
+            l&#8217;atelier pour r&#233;gler le probl&#232;me. Ils ont chang&#233; les
+            omni roues pour des roues normales, mais cette solution s&#8217;est
+            av&#233;r&#233;e inefficace. Ils ont donc d&#233;cid&#233; de remettre les
+            roues initiales et de les bloquer lors de la mont&#233;e. Ils pensent que
+            ceci conf&#233;rerait plus de stabilit&#233; au robot.</p>
+          </div>
+
+          <div><img src="img/journal/jan13.jpg"
+               alt="" /></div>
+
+          <div>
+            <img style="width:250px;height=auto;"
+                 src="img/journal/jan14.jpg"
+                 alt="" />
+
+            <h1>Le 14 janvier 2014</h1>
+
+            <p>C&#8217;est le sprint final!</p>
+
+            <p>Le circuit &#233;lectrique a &#233;t&#233; compl&#233;t&#233;. Un
+            &#8220;Energy Chain&#8221;, un c&#226;ble qui permet de bien faire passer les
+            fils &#233;lectriques, a &#233;t&#233; utilis&#233; pour amener les fils vers
+            la pince. Mes assistants ont r&#233;alis&#233; que le robot ne correspondait
+            pas aux dimensions prescrites par les r&#232;gles de la comp&#233;tition.
+            Mieux vaut tard que jamais; ils ont modifi&#233; la position des omni roues
+            afin de diminuer sa largeur.</p>
+          </div>
+
+          <div>
+            <h1>Le 21 janvier 2014</h1>
+
+            <p>Ferly et Erik ont &#233;t&#233; choisis comme pilotes. Durant
+            l&#8217;&#233;preuve de s&#233;lection, j&#8217;ai discut&#233; un peu avec
+            mes &#233;tudiants &#224; propos des deux derni&#232;res semaines de vacances
+            sacrifi&#233;es au d&#233;veloppement du robot. Nous avons mis tellement de
+            coeur et d&#8217;&#233;nergie dans cette entreprise que chacun d&#8217;entre
+            nous esp&#232;re que nos efforts n&#8217;auront pas &#233;t&#233;
+            futiles.</p>
+          </div>
+
+          <div>
+            <p>&#202;tre mes assistants de projet n&#8217;a pas d&#251; &#234;tre facile.
+            Et pourtant, malgr&#233; les difficult&#233;s, les &#233;tudiants m&#8217;ont
+            confi&#233; que leur exp&#233;rience en robotique a &#233;t&#233; des plus
+            enrichissantes. Non seulement ils ont acquis de nouvelles comp&#233;tences en
+            robotique, ils ont aussi appris &#224; travailler en &#233;quipe. Coordonner
+            les activit&#233;s de chaque sous-groupe d&#8217;une &#233;quipe aussi large
+            que la n&#244;tre a caus&#233; des maux de t&#234;te &#224; plus d&#8217;une
+            personne. G&#233;rer un projet est maintenant devenu naturel pour Capitaine
+            Smita et mes assistants ont aff&#251;t&#233; leur capacit&#233; &#224;
+            r&#233;soudre des probl&#232;mes. En effet, les difficult&#233;s n&#8217;en
+            finissaient plus de survenir durant la conception et la construction du
+            robot. Bien que mes &#233;tudiants aient parfois &#233;t&#233; frustr&#233;s,
+            ils ont appris &#224; attaquer le probl&#232;me d&#8217;un esprit flexible et
+            aiguis&#233;. Par ailleurs, le groupe responsable de la vid&#233;o a
+            mentionn&#233; qu&#8217;ils ont finalement compris l&#8217;ampleur que peut
+            prendre le tournage d&#8217;un film.</p>
+          </div>
+
+          <div>
+            <p>...et moi? Je reconnais maintenant que l&#8217;arch&#233;ologie
+            n&#8217;est plus telle que je la pratiquais. Mes assistants lui ont
+            donn&#233; une toute autre dimension. N&#8217;est-ce pas que l&#8217;Homme
+            &#233;volue et ne cesse de raffiner ses outils?</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery-1.10.2.min.js"
+         type="text/javascript">
+</script> <script src="./js/bootstrap.min.js"
+         type="text/javascript">
+</script> <script src="./js/turn.min.js"
+         type="text/javascript">
+</script> <script src="./js/jquery.easing.1.3.js"
+         type="text/javascript">
+</script> <script src="./js/jquery.booklet.1.1.0.min.js"
+         type="text/javascript">
+</script> <script src="./js/buzz.min.js"
+         type="text/javascript">
+</script> <script src="./js/jquery.colorbox-min.js"
+         type="text/javascript">
+</script> <script src="./js/animations.js"
+         type="text/javascript">
+</script> <script type="text/javascript">
+//<![CDATA[
+                        $(function() {
+                                var $mybook             = $('#mybook');
+                                var $bttn_next          = $('#next_page_button');
+                                var $bttn_prev          = $('#prev_page_button');
+                                var $loading            = $('#loading');
+                                var $mybook_images      = $mybook.find('img');
+                                var cnt_images          = $mybook_images.length;
+                                var loaded                      = 0;
+                                //preload all the images in the book,
+                                //and then call the booklet plugin
+
+                                $mybook_images.each(function(){
+                                        var $img        = $(this);
+                                        var source      = $img.attr('src');
+                                        $('<img/>').load(function(){
+                                                ++loaded;
+                                                if(loaded == cnt_images){
+                                                        $loading.hide();
+                                                        $bttn_next.show();
+                                                        $bttn_prev.show();
+                                                        $mybook.show().booklet({
+                                                                name:               null,                            // name of the booklet to display in the document title bar
+                                                                width:              800,                             // container width
+                                                                height:             500,                             // container height
+                                                                speed:              600,                             // speed of the transition between pages
+                                                                direction:          'LTR',                           // direction of the overall content organization, default LTR, left to right, can be RTL for languages which read right to left
+                                                                startingPage:       0,                               // index of the first page to be displayed
+                                                                easing:             'easeInOutQuad',                 // easing method for complete transition
+                                                                easeIn:             'easeInQuad',                    // easing method for first half of transition
+                                                                easeOut:            'easeOutQuad',                   // easing method for second half of transition
+
+                                                                closed:             true,                           // start with the book "closed", will add empty pages to beginning and end of book
+                                                                closedFrontTitle:   null,                            // used with "closed", "menu" and "pageSelector", determines title of blank starting page
+                                                                closedFrontChapter: null,                            // used with "closed", "menu" and "chapterSelector", determines chapter name of blank starting page
+                                                                closedBackTitle:    null,                            // used with "closed", "menu" and "pageSelector", determines chapter name of blank ending page
+                                                                closedBackChapter:  null,                            // used with "closed", "menu" and "chapterSelector", determines chapter name of blank ending page
+                                                                covers:             false,                           // used with  "closed", makes first and last pages into covers, without page numbers (if enabled)
+
+                                                                pagePadding:        10,                              // padding for each page wrapper
+                                                                pageNumbers:        true,                            // display page numbers on each page
+
+                                                                hovers:             false,                            // enables preview pageturn hover animation, shows a small preview of previous or next page on hover
+                                                                overlays:           false,                            // enables navigation using a page sized overlay, when enabled links inside the content will not be clickable
+                                                                tabs:               false,                           // adds tabs along the top of the pages
+                                                                tabWidth:           60,                              // set the width of the tabs
+                                                                tabHeight:          20,                              // set the height of the tabs
+                                                                arrows:             false,                           // adds arrows overlayed over the book edges
+                                                                cursor:             'pointer',                       // cursor css setting for side bar areas
+
+                                                                hash:               false,                           // enables navigation using a hash string, ex: #/page/1 for page 1, will affect all booklets with 'hash' enabled
+                                                                keyboard:           true,                            // enables navigation with arrow keys (left: previous, right: next)
+                                                                next:               $bttn_next,                                 // selector for element to use as click trigger for next page
+                                                                prev:               $bttn_prev,                                 // selector for element to use as click trigger for previous page
+
+                                                                menu:               null,                            // selector for element to use as the menu area, required for 'pageSelector'
+                                                                pageSelector:       false,                           // enables navigation with a dropdown menu of pages, requires 'menu'
+                                                                chapterSelector:    false,                           // enables navigation with a dropdown menu of chapters, determined by the "rel" attribute, requires 'menu'
+
+                                                                shadows:            true,                            // display shadows on page animations
+                                                                shadowTopFwdWidth:  166,                             // shadow width for top forward anim
+                                                                shadowTopBackWidth: 166,                             // shadow width for top back anim
+                                                                shadowBtmWidth:     50,                              // shadow width for bottom shadow
+
+                                                                before:             function(){},                    // callback invoked before each page turn animation
+                                                                after:              function(){}                     // callback invoked after each page turn animation
+                                                        });
+                                                        Cufon.refresh();
+                                                }
+                                        }).attr('src',source);
+                                });
+
+                        });
+    //]]>
+    </script>
+  </div>
+</body>
+</html>

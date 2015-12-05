@@ -1,0 +1,689 @@
+/* GENERAL CSS TO DEFINE LAYOUT */
+.starter-template {
+ /* padding: 40px 15px;
+  text-align: center; */
+}
+#map {
+	width: 700px;
+	height:539px;
+  z-index:100;
+}
+img {
+	position: relative;
+}
+body
+{
+	background-image:url('../img/bg.jpg');
+	color:white;
+  padding-top: 125px;
+ /* overflow-x:hidden; Hide the scrollbar */
+}
+h1{
+  font-family: 'Kite One', sans-serif;
+}
+
+.nopadding{
+  padding-top: 0px !important;
+}
+
+/*
+ * CSS to be used on the splash language selection page
+ */
+.splash_map
+{
+	background-image:url('../img/map_blank.png');
+  width:700px;
+  height:537px;
+  -webkit-transform:rotate(-2.5deg);
+  -moz-transform:rotate(-2.5deg);
+  -ms-transform:rotate(-2.5deg);
+  -o-transform:rotate(-2.5deg);
+  transform:rotate(-2.5deg);
+}
+.splash_logo{
+  position:relative;
+  top:30%; /* somewhat centers the logo*/
+}
+.language_selector{
+  margin:50px;
+}
+.language_selector span{
+    font-weight:bold;
+    font-size:2em;
+}
+
+/*
+ * PROJECTOR SCREEN IN THE VIDEO PAGE
+ */
+
+/*Changes the background to a darker one */
+.dark{
+	background-image:url('../img/dark_bg.png');
+}
+
+/*Projector screen*/
+#screen{
+padding: 25px 25px 25px 25px;
+background-color: rgb(247, 251, 255);
+-webkit-box-shadow: inset 1px -8px 71px 0px rgba(233,227,255,1);
+-moz-box-shadow: inset 1px -8px 71px 0px rgba(233,227,255,1);
+box-shadow: inset 1px -8px 71px 0px rgba(233,227,255,1);
+-webkit-border-bottom-right-radius: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-bottomright: 20px;
+-moz-border-radius-bottomleft: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+border-style:solid;
+border-width:0px 10px 10px 10px;
+border-color:black;
+-webkit-box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);
+-moz-box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);
+box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);
+}
+#handle{
+
+}
+
+/*
+ * GAME AND COLLEGE INFORMATION PAGE
+ */
+
+/*Creates a paper stack efect*/
+
+.letter {
+  color:#3B3B3B;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 26px auto 0;
+  max-width: 750px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 90%;
+  padding: 37px 55px 27px;
+}
+
+.letter:before, .letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.letter:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  -webkit-transform:rotate(2.5deg);
+  -moz-transform:rotate(2.5deg);
+  -ms-transform:rotate(2.5deg);
+  -o-transform:rotate(2.5deg);
+  transform:rotate(2.5deg);}
+.letter:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  -webkit-transform:rotate(1.4deg);
+  -moz-transform:rotate(1.4deg);
+  -ms-transform:rotate(1.4deg);
+  -o-transform:rotate(1.4deg);
+  transform:rotate(1.4deg);
+}
+
+/*Creates a paperclip */
+
+.paperclip{
+	background:url('../img/clip.png');
+	content:' ';
+	height:84px;
+	width:45px;
+	position:absolute;
+	top:-22px;
+	left:30px;
+  z-index:70;
+}
+/*
+ * ENVELOPE TRANSLATION
+ */
+
+.env_box {
+  position:absolute;
+  top:-30px;
+  padding-left:20%;
+  z-index:1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+.env_box img{
+width:750px;
+height:auto;
+}
+/*
+ * Robot page
+ */
+#polaroid-bot-1{
+  position:absolute;
+  right: -180px;
+  float:right;
+  z-index:1;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+}
+#polaroid-bot-2{
+  position:relative;
+  right:-30px;
+  float:right;
+    z-index:2;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+}
+/*
+ * Game Information Page
+ */
+
+/* Defines rotation and location of polaroid pictures */
+
+.polaroid-game-1{
+  position:relative;
+  left:-30px;
+  float:left;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+}
+
+#polaroid-game-2{
+  position:absolute;
+  right: -180px;
+  float:right;
+  z-index:-100;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+}
+
+/* Add drop shadows*/
+.img-shaded  {
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.15);
+  -ms-box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+
+
+/* MAP TRANSLATION and effects */
+.map_box {
+  -webkit-transition:all .5s ease-out;
+  -moz-transition:all .5s ease-out;
+  -ms-transition:all .5s ease-out;
+  -o-transition:all .5s ease-out;
+  transition:all .5s ease-out;
+  position:absolute;
+  top:10%;
+  left:-650px;
+  z-index:100;
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg);
+  -o-transform:rotate(-30deg);
+  transform:rotate(-30deg);
+  -webkit-box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);
+  -moz-box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);
+  box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);
+}
+
+.map_box:hover {
+  -webkit-transform:translate(650px,0px) rotate(0deg);
+  -moz-transform:translate(650px,0px) rotate(0deg);
+  -ms-transform:translate(650px,0px) rotate(0deg);
+  -o-transform:translate(650px,0px) rotate(0deg);
+  transform:translate(650px,0px) rotate(0deg);
+}
+
+/* JOUNRAL */
+#journal{
+    width: 800px;
+    height: 400px;
+}
+#journal .turn-page{
+    background-color:#ccc;
+}
+
+/* TEAM MEMBERS PHOTO POLAROIDS */
+ul.polaroids a {
+	background: #fff;
+	display: inline;
+	float: left;
+	margin: 0 0 27px 30px;
+	width: auto;
+	padding: 10px 10px 15px;
+	text-align: center;
+	font-family: "Marker Felt", sans-serif;
+	text-decoration: none;
+	color: #333;
+	font-size: 18px;
+}
+ul.polaroids a:after {
+  content: attr(title);
+}
+/* By default, we tilt all our images -2 degrees */
+ul.polaroids a {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+}
+
+/* Rotate all even images 2 degrees */
+ul.polaroids li:nth-child(even) a {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
+
+/* Don't rotate every third image, but offset its position */
+ul.polaroids li:nth-child(3n) a {
+  -webkit-transform: none;
+  -moz-transform: none;
+  position: relative;
+  top: -5px;
+}
+
+/* Rotate every fifth image by 5 degrees and offset it */
+ul.polaroids li:nth-child(5n) a {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  right: 5px;
+}
+
+/* Keep default rotate for every eighth, but offset it */
+ul.polaroids li:nth-child(8n) a {
+  position: relative;
+  top: 8px;
+  right: 5px;
+}
+
+/* Keep default rotate for every eleventh, but offset it */
+ul.polaroids li:nth-child(11n) a {
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+
+/* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
+ul.polaroids a:hover {
+  -webkit-transform: scale(1.25) !important;
+  -moz-transform: scale(1.25) !important;
+  -ms-transform: scale(1.25) !important;
+  transform: scale(1.25) !important;
+  position: relative;
+  z-index: 5;
+}
+/* Add drop shadows and smooth out the transition (Safari only) */
+ul.polaroids a {
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+/* On hover, darken the shadows a bit */
+ul.polaroids a {
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+img.polaroids{
+	/* width:200px;
+	height:250px; */
+}
+/*POLAROID GALLERY*/
+a.polaroid {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	padding: 10px 10px 20px 10px;
+	width: 150px;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	z-index: 2;
+	font-size: 0.7em;
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+	box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+	-webkit-transition: all 0.5s ease-in;
+}
+a.polaroid:hover,
+a.polaroid:focus,
+a.polaroid:active {
+	z-index: 999;
+	border-color: #6A6A6A;
+	-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	-webkit-transform: rotate(0deg) scale(1.05);
+	-moz-transform: rotate(0deg) scale(1.05);
+	transform: rotate(0deg) scale(1.05);
+}
+.polaroid img {
+	margin: 0 0 15px;
+	width: 150px;
+	height: 150px;
+}
+
+a img {
+	border: none;
+	display: block;
+}
+
+
+a:hover,
+a:focus {
+	z-index: 5;
+}
+
+/* JOURNAL */
+
+.booklet p{
+	color:#2F1B0C;
+	font-size:40px;
+	margin:20px 0px 0px 20px;
+}
+
+/* Booklet jQuery Plugin Style*/
+.booklet{
+	-moz-box-shadow:0px 0px 1px #fff;
+	-webkit-box-shadow:0px 0px 1px #fff;
+	box-shadow:0px 0px 1px #fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.booklet .b-wrap-left  {
+	background:#fff url(../img/left_bg.jpg) no-repeat top left;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+   box-sizing: content-box !important;
+  -ms-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+.booklet .b-wrap-right {
+	background:#efefef url(../img/right_bg.jpg) no-repeat top left;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+   box-sizing: content-box !important;
+  -ms-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+.booklet .b-counter {
+	bottom:10px;
+	position:absolute;
+	display:block;
+	width:90%;
+	height:20px;
+	border-top:1px solid #ddd;
+	color:#222;
+	text-align:center;
+	font-size:12px;
+	padding:5px 0 0;
+	background:transparent;
+	-moz-box-shadow:0px -1px 1px #fff;
+	-webkit-box-shadow:0px -1px 1px #fff;
+	box-shadow:0px -1px 1px #fff;
+	opacity:0.8;
+  box-sizing: content-box !important;
+  -ms-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+.book_wrapper{
+	margin:0 auto;
+	padding-top:50px;
+	width:905px;
+	height:540px;
+	position:relative;
+	background:transparent url(../img/bg.png) no-repeat 9px 27px;
+  box-sizing: content-box !important;
+  -ms-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+.book_wrapper h1{
+	color:#13386a;
+	margin:5px 5px 5px 15px;
+	font-size:26px;
+	background:transparent url(../img/h1.png) no-repeat bottom left;
+	padding-bottom:7px;
+}
+.book_wrapper p{
+	font-size:16px;
+	margin:5px 5px 5px 15px;
+}
+.book_wrapper a.article,
+.book_wrapper a.demo{
+	background:transparent url(../img/circle.png) no-repeat 50% 0px;
+	display:block;
+	width:95px;
+	height:41px;
+	text-decoration:none;
+	outline:none;
+	font-size:16px;
+	color:#555;
+	float:left;
+	line-height:41px;
+	padding-left:47px;
+}
+.book_wrapper a.demo{
+	margin-left:50px;
+}
+.book_wrapper a.article:hover,
+.book_wrapper a.demo:hover{
+	background-position:50% -41px;
+	color:#13386a;
+}
+.book_wrapper img{
+	margin:10px 0px 5px 35px;
+	width:300px;
+	padding:4px;
+	border:1px solid #ddd;
+	-moz-box-shadow:1px 1px 1px #fff;
+	-webkit-box-shadow:1px 1px 1px #fff;
+	box-shadow:1px 1px 1px #fff;
+}
+.booklet .b-wrap-right img{
+	border:1px solid #E6E3C2;
+}
+a#next_page_button,
+a#prev_page_button{
+	display:none;
+	position:absolute;
+	width:41px;
+	height:40px;
+	cursor:pointer;
+	margin-top:-20px;
+	top:50%;
+	background:transparent url(../img/buttons.png) no-repeat 0px -40px;
+}
+a#prev_page_button{
+	left:-30px;
+}
+a#next_page_button{
+	right:-30px;
+	background-position:-41px -40px;
+}
+a#next_page_button:hover{
+	background-position:-41px 0px;
+}
+a#prev_page_button:hover{
+	background-position:0px 0px;
+}
+.loading{
+	width:160px;
+	height:56px;
+	position: absolute;
+	top:50%;
+	margin-top:-28px;
+	right:135px;
+	line-height:56px;
+	color:#fff;
+	padding-left:60px;
+	font-size:15px;
+	background: #000 url(../img/ajax-loader.gif) no-repeat 10px 50%;
+	opacity: 0.7;
+	z-index:9999;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+/* RADIO */
+.music_controller{
+  position:absolute;
+  top:-40px;
+  z-index:2;
+  right: 5%;
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  -ms-transform:rotate(5deg);
+  -o-transform:rotate(5deg);
+  transform:rotate(5deg);
+  background-image: url(../img/radio.png);
+  height: 176px;
+  width:250px;
+}
+.music_controller > p{
+   display: table-cell;
+   margin-left:auto;
+   margin-right:auto;
+   vertical-align: middle;
+}
+.music_controller:hover{
+  background-image: url(../img/radio-selected.png);
+
+}
+
+/*
+ * STYLES FOR THE COLORBOX: POPUPS WHEN CLICKING TEAM MEMBERS
+ */
+
+/*
+    Colorbox Core Style
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{
+  background:rgba(255,255,255,0.5);;
+}
+#colorbox{outline:0;}
+#cboxWrapper{
+}
+    #cboxContent{overflow:hidden;}
+        .cboxIframe{}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:20px;}
+        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
+        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
+        #cboxLoadingOverlay{background:#fff url(../img/loading.gif) no-repeat 5px 5px;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+        #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+        #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
+        #cboxClose{position:absolute; top:0; right:0; display:block; color:#000;background:#fff;-webkit-box-shadow: inset 1px -8px 71px 0px rgba(233,227,255,1);
+padding:5px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);
+-moz-box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);
+box-shadow: 0px 0px 66px 0px rgba(0,0,0,0.34);}
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+ * COLLEGE INFO PAGE
+ */
+.dotted_area{
+  margin:25px;
+  padding: 15px;
+  border:3px dotted #428bca;
+  text-align:center;
+}
+
+#polaroid-college-1{
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  /* Center the image */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#polaroid-college-2{
+  position:relative;
+  right:-30px;
+  float:right;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+}
+
+#prev_page_button{
+z-index:1000;
+}
